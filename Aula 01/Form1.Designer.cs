@@ -29,74 +29,79 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.txbLogin = new System.Windows.Forms.TextBox();
+            this.txbSenha = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lnkEsqueciSenha = new System.Windows.Forms.LinkLabel();
+            this.lnkNovoCadastro = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblLogin
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(56, 266);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.ForeColor = System.Drawing.Color.White;
+            this.lblLogin.Location = new System.Drawing.Point(56, 266);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(48, 20);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Login";
+            this.lblLogin.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txbLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(56, 298);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(349, 27);
-            this.textBox1.TabIndex = 2;
+            this.txbLogin.Location = new System.Drawing.Point(56, 298);
+            this.txbLogin.Name = "txbLogin";
+            this.txbLogin.Size = new System.Drawing.Size(349, 27);
+            this.txbLogin.TabIndex = 1;
             // 
-            // textBox2
+            // txbSenha
             // 
-            this.textBox2.Location = new System.Drawing.Point(57, 381);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(349, 27);
-            this.textBox2.TabIndex = 4;
+            this.txbSenha.Location = new System.Drawing.Point(57, 381);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.Size = new System.Drawing.Size(349, 27);
+            this.txbSenha.TabIndex = 3;
+            this.txbSenha.UseSystemPasswordChar = true;
             // 
-            // label2
+            // lblSenha
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(57, 349);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Senha";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSenha.ForeColor = System.Drawing.Color.White;
+            this.lblSenha.Location = new System.Drawing.Point(57, 349);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(51, 20);
+            this.lblSenha.TabIndex = 2;
+            this.lblSenha.Text = "Senha";
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(56, 455);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEntrar.Location = new System.Drawing.Point(56, 455);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(146, 29);
+            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(260, 455);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.Leave += new System.EventHandler(this.button2_Click);
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSair.Location = new System.Drawing.Point(260, 455);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(146, 29);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.button2_Click);
+            this.btnSair.Leave += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -109,19 +114,63 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(57, 543);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 19);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Opa, sou novo aqui.";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // lnkEsqueciSenha
+            // 
+            this.lnkEsqueciSenha.ActiveLinkColor = System.Drawing.Color.LightSkyBlue;
+            this.lnkEsqueciSenha.AutoSize = true;
+            this.lnkEsqueciSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lnkEsqueciSenha.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lnkEsqueciSenha.LinkColor = System.Drawing.Color.Firebrick;
+            this.lnkEsqueciSenha.Location = new System.Drawing.Point(56, 514);
+            this.lnkEsqueciSenha.Name = "lnkEsqueciSenha";
+            this.lnkEsqueciSenha.Size = new System.Drawing.Size(149, 19);
+            this.lnkEsqueciSenha.TabIndex = 10;
+            this.lnkEsqueciSenha.TabStop = true;
+            this.lnkEsqueciSenha.Text = "Esqueci minha senha.";
+            this.lnkEsqueciSenha.VisitedLinkColor = System.Drawing.Color.SkyBlue;
+            // 
+            // lnkNovoCadastro
+            // 
+            this.lnkNovoCadastro.AutoSize = true;
+            this.lnkNovoCadastro.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lnkNovoCadastro.LinkColor = System.Drawing.Color.Firebrick;
+            this.lnkNovoCadastro.Location = new System.Drawing.Point(197, 543);
+            this.lnkNovoCadastro.Name = "lnkNovoCadastro";
+            this.lnkNovoCadastro.Size = new System.Drawing.Size(167, 19);
+            this.lnkNovoCadastro.TabIndex = 11;
+            this.lnkNovoCadastro.TabStop = true;
+            this.lnkNovoCadastro.Text = "Realizar novo cadastro.";
+            this.lnkNovoCadastro.VisitedLinkColor = System.Drawing.Color.SkyBlue;
+            this.lnkNovoCadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(462, 618);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lnkNovoCadastro);
+            this.Controls.Add(this.lnkEsqueciSenha);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.txbSenha);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.txbLogin);
+            this.Controls.Add(this.lblLogin);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -133,12 +182,15 @@
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label2;
-        private Button button1;
-        private Button button2;
+        private Label lblLogin;
+        private TextBox txbLogin;
+        private TextBox txbSenha;
+        private Label lblSenha;
+        private Button btnEntrar;
+        private Button btnSair;
         private PictureBox pictureBox1;
+        private Label label2;
+        private LinkLabel lnkEsqueciSenha;
+        private LinkLabel lnkNovoCadastro;
     }
 }
