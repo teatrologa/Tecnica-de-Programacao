@@ -56,10 +56,12 @@
             // 
             // txbLogin
             // 
+            this.txbLogin.ForeColor = System.Drawing.Color.DarkGray;
             this.txbLogin.Location = new System.Drawing.Point(56, 298);
             this.txbLogin.Name = "txbLogin";
             this.txbLogin.Size = new System.Drawing.Size(349, 27);
             this.txbLogin.TabIndex = 1;
+            this.txbLogin.Text = "seuNome@email.com";
             // 
             // txbSenha
             // 
