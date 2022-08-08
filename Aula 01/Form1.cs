@@ -19,7 +19,7 @@ namespace Aula_01
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //MessageBox.Show("Espere um pouquinho enquanto preparamos seu portfólio!");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace Aula_01
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            base.Close();
         }
     }
 }
