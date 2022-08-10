@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmlCalculadoraSimples));
             this.btnOne = new System.Windows.Forms.Button();
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnThree = new System.Windows.Forms.Button();
@@ -47,9 +48,10 @@
             this.gbxResult = new System.Windows.Forms.GroupBox();
             this.lblHistoric = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
-            this.txbOperation = new System.Windows.Forms.TextBox();
             this.btnClean = new System.Windows.Forms.Button();
+            this.pbxMenu = new System.Windows.Forms.PictureBox();
             this.gbxResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOne
@@ -232,6 +234,7 @@
             // 
             this.gbxResult.BackColor = System.Drawing.Color.White;
             this.gbxResult.Controls.Add(this.lblHistoric);
+            this.gbxResult.Controls.Add(this.lblResult);
             this.gbxResult.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gbxResult.ForeColor = System.Drawing.Color.DimGray;
             this.gbxResult.Location = new System.Drawing.Point(46, 47);
@@ -255,25 +258,12 @@
             this.lblResult.AutoSize = true;
             this.lblResult.BackColor = System.Drawing.Color.White;
             this.lblResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblResult.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblResult.Location = new System.Drawing.Point(63, 191);
+            this.lblResult.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblResult.Location = new System.Drawing.Point(17, 79);
             this.lblResult.Name = "lblResult";
             this.lblResult.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblResult.Size = new System.Drawing.Size(0, 28);
             this.lblResult.TabIndex = 0;
-            // 
-            // txbOperation
-            // 
-            this.txbOperation.BackColor = System.Drawing.Color.White;
-            this.txbOperation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbOperation.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txbOperation.ForeColor = System.Drawing.Color.Black;
-            this.txbOperation.Location = new System.Drawing.Point(46, 182);
-            this.txbOperation.Multiline = true;
-            this.txbOperation.Name = "txbOperation";
-            this.txbOperation.Size = new System.Drawing.Size(231, 47);
-            this.txbOperation.TabIndex = 1;
-            this.txbOperation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnClean
             // 
@@ -286,15 +276,26 @@
             this.btnClean.UseVisualStyleBackColor = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
+            // pbxMenu
+            // 
+            this.pbxMenu.BackColor = System.Drawing.Color.Transparent;
+            this.pbxMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbxMenu.Image")));
+            this.pbxMenu.Location = new System.Drawing.Point(46, 182);
+            this.pbxMenu.Name = "pbxMenu";
+            this.pbxMenu.Size = new System.Drawing.Size(73, 47);
+            this.pbxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxMenu.TabIndex = 18;
+            this.pbxMenu.TabStop = false;
+            this.pbxMenu.Click += new System.EventHandler(this.pbxMenu_Click);
+            // 
             // FmlCalculadoraSimples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(403, 541);
+            this.Controls.Add(this.pbxMenu);
             this.Controls.Add(this.btnClean);
-            this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.txbOperation);
             this.Controls.Add(this.gbxResult);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnDivide);
@@ -317,8 +318,8 @@
             this.Text = "Calculadora Simples";
             this.gbxResult.ResumeLayout(false);
             this.gbxResult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMenu)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -342,8 +343,8 @@
         private Button btnMultiply;
         private GroupBox gbxResult;
         private Label lblResult;
-        private TextBox txbOperation;
         private Label lblHistoric;
         private Button btnClean;
+        private PictureBox pbxMenu;
     }
 }

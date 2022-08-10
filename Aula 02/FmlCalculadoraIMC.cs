@@ -65,6 +65,12 @@ namespace Aula_02
 
             return (imc, resultado); //na mesma ordem que foi escrito no inicio do metodo
         }
-      
+
+        private void pbxMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menuPrincipal = new Menu();
+            menuPrincipal.Show();
+        }
     }
 }

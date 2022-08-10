@@ -138,6 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(538, 506);
             this.Controls.Add(this.btnSair);
@@ -149,6 +150,7 @@
             this.Controls.Add(this.pbxDiv);
             this.Controls.Add(this.lblTituloMenu);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu  |  Calculadoras";
             ((System.ComponentModel.ISupportInitialize)(this.pbxDiv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCalcSimples)).EndInit();

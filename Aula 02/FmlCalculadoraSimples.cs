@@ -41,127 +41,119 @@ namespace Aula_02
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "0";
             lblHistoric.Text += "0";
         }
 
         private void btnOne_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "1";
             lblHistoric.Text += "1";
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "2";
             lblHistoric.Text += "2";
         }
 
         private void btnThree_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "3";
             lblHistoric.Text += "3";
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "4";
             lblHistoric.Text += "4";
         }
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "5";
             lblHistoric.Text += "5";
         }
 
         private void btnSix_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "6";
             lblHistoric.Text += "6";
         }
 
         private void btnSeven_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "7";
             lblHistoric.Text += "7";
         }
 
         private void btnEight_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "8";
             lblHistoric.Text += "8";
         }
 
         private void btnNine_Click(object sender, EventArgs e)
         {
-            txbOperation.Text += "9";
             lblHistoric.Text += "9";
         }
 
         private void btnDot_Click(object sender, EventArgs e)
         {
-            if (!txbOperation.Text.Contains("."))
-            {
-                txbOperation.Text += ",";
-                lblHistoric.Text += ",";
-            }
+            //if (!lblHistoric.Text.Contains("."))
+            //{
+            //    lblHistoric.Text += ",";
+            //}
             
         }
 
         private void btnMore_Click(object sender, EventArgs e)
         {
             lblHistoric.Text += " + ";
-            SelOperation = Operation.More;
-            Valor = Convert.ToDecimal(txbOperation.Text);
-            txbOperation.Text = "";
+            //SelOperation = Operation.More;
+            //Valor = Convert.ToDecimal(txbOperation.Text);
+            
         }
 
         private void btnLess_Click(object sender, EventArgs e)
         {
             lblHistoric.Text += " - ";
-            SelOperation = Operation.Less;
-            Valor = Convert.ToDecimal(txbOperation.Text);
-            txbOperation.Text = "";
+            //SelOperation = Operation.Less;
+            //Valor = Convert.ToDecimal(txbOperation.Text);
+            
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
             lblHistoric.Text += " / ";
-            SelOperation = Operation.Divide;
-            Valor = Convert.ToDecimal(txbOperation.Text);
-            txbOperation.Text = "";
+            //SelOperation = Operation.Divide;
+            //Valor = Convert.ToDecimal(txbOperation.Text);
+            
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
             lblHistoric.Text += " * ";
-            SelOperation = Operation.Multiply;
-            Valor = Convert.ToDecimal(txbOperation.Text);
-            txbOperation.Text = "";
+            //SelOperation = Operation.Multiply;
+            //Valor = Convert.ToDecimal(txbOperation.Text);
+            
         }
 
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            switch (SelOperation)
-            {
-                case Operation.More:
-                    Result = Valor + Convert.ToDecimal(txbOperation.Text);
-                    break;
-                case Operation.Less:
-                    Result = Valor - Convert.ToDecimal(txbOperation.Text);
-                    break;
-                case Operation.Divide:
-                    Result = Valor / Convert.ToDecimal(txbOperation.Text);
-                    break;
-                case Operation.Multiply:
-                    Result = Valor * Convert.ToDecimal(txbOperation.Text);
-                    break;
-            }
+            //switch (SelOperation)
+            //{
+            //    case Operation.More:
+            //        Result = Valor + Convert.ToDecimal(txbOperation.Text);
+            //        break;
+            //    case Operation.Less:
+            //        Result = Valor - Convert.ToDecimal(txbOperation.Text);
+            //        break;
+            //    case Operation.Divide:
+            //        Result = Valor / Convert.ToDecimal(txbOperation.Text);
+            //        break;
+            //    case Operation.Multiply:
+            //        Result = Valor * Convert.ToDecimal(txbOperation.Text);
+            //        break;
+            //}
 
-            lblResult.Text = Result.ToString();
-            txbOperation.Text = "";
+            DataTable Calc = new DataTable();
+            var result = Calc.Compute(lblHistoric.Text, "");
+
+            lblResult.Text = result.ToString();
+            //txbOperation.Text = "";
             
             
             
@@ -180,9 +172,24 @@ namespace Aula_02
         {
             lblResult.Text = "";
             lblHistoric.Text = "";
-            txbOperation.Text = "";
             Valor = 0;
             Result = 0;
         }
+
+        private void pbxMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menuPrincipal = new Menu();
+            menuPrincipal.Show();
+        }
     }
 }
+
+//private void txbDisplay_KeyPress(object sender, KeyPressEventArgs e)
+//{
+//    if ("+-*/".Contains(e.KeyChar))
+//    {
+//        Operation(e.KeyChar.ToString());
+//    }
+//    e.Handled = !char.IsDigit(e.KeyChar);
+//}

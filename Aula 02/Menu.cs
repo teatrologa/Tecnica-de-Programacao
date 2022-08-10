@@ -19,13 +19,14 @@ namespace Aula_02
 
         private void btnCalcSimples_Click(object sender, EventArgs e)
         {
-            //Application.Run(new FmlCalculadoraSimples());
+            this.Hide();
             FmlCalculadoraSimples newCalc = new FmlCalculadoraSimples();
             newCalc.Show();
         }
 
         private void btnCalcImc_Click(object sender, EventArgs e)
         {
+            this.Hide();
             fmlCalculadoraIMC newCalc = new fmlCalculadoraIMC();
             newCalc.Show();
         }
