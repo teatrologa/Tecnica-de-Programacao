@@ -1,0 +1,7 @@
+﻿Crie uma calculadora conforme a imagem disponibilizada.
+
+Deve conter apenas as operações somar, subtrair, dividir e multiplicar.
+Para jogar os valores no TextBox, vá concatenando os os mesmos na propriedade Text.
+Para realizar o cálculo de forma simples com conteúdo da TextBox, utilize o método Compute da classe DataTable. Ex.:
+DataTable Calc = new DataTable();
+var result = Calc.Compute("2+2", "");
