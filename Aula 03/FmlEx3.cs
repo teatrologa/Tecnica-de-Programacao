@@ -24,6 +24,7 @@ namespace Aula_03
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
+            lboxMatriz.Items.Clear();
             int linha = Convert.ToInt32(tbxLinha.Text);
             int coluna = Convert.ToInt32(tbxColuna.Text);
             gbxAreaPlot.Text = $"Essa é uma matriz {linha}x{coluna}.";
