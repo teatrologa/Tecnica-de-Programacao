@@ -12,7 +12,10 @@ namespace Aula_03
 {
     public partial class fmlEx1 : Form
     {
-        public int[] Inteiros = new int[10];
+        int[] inteiros = new int[5];
+        int contadorGeral = 0;
+        
+        
         public fmlEx1()
         {
             InitializeComponent();
@@ -20,16 +23,31 @@ namespace Aula_03
 
         private void fmlEx1_Load(object sender, EventArgs e)
         {
-             
+            //inteiros[0] = 20;
+            //inteiros[1] = 117;
+            //inteiros[2] = 33;
+            //inteiros[3] = 40;
+            //inteiros[4] = 55;
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
             
-            contador();
-            receberNumero();
-            escreverNumero();
-            tbxInsert.Text = "";
+            int contadorInterno = contadorGeral;
+            if (contadorGeral <= 4)
+            {
+                inteiros[contadorInterno] = Convert.ToInt32(tbxInsert.Text);
+                contador();
+                tbxInsert.Text = "";
+                contadorGeral++;
+                if (contadorInterno == 4)
+                {
+                    escreverNumero();
+                    separarPar();
+                    separarImp();
+                }
+            }
+            
         }
 
         private int contador ()
@@ -38,28 +56,51 @@ namespace Aula_03
             lblContador.Text = (cont - 1).ToString();
             return cont; 
         }
-        private void receberNumero()
+
+        private void receberNum(int cont)
         {
-            for (int i = 10; i < 0; i--)
-            {
-                int setNum = Convert.ToInt32(tbxInsert.Text);
-                Inteiros[i] = setNum;
-            }
+            inteiros[cont] = Convert.ToInt32(tbxInsert.Text);
         }
+
         private void escreverNumero()
         {
-            foreach (int n in Inteiros)
-            {
-                lbxNumber.Items.Add(Inteiros[n]);
-            }
+            
+             foreach (int i in inteiros)
+             {
+                lbxNumber.Items.Add(i);
+                Array.Sort(inteiros);
+             }
+           
         }
 
         private void separarPar()
         {
+            foreach (int i in inteiros)
+            {
+                if (i % 2 == 0)
+                lbxNumPar.Items.Add(i);
+                Array.Sort(inteiros);
+            }
+        }
 
+        private void separarImp()
+        {
+           
+            foreach (int i in inteiros)
+            {
+                if (i % 2 != 0)
+                lbxNumImp.Items.Add(i);
+                Array.Sort(inteiros);
+            }
         }
 
 
-      
+        /*
+         * Ideia:
+         * 1. criar metodos com funções específicas de receber e gravar o numero no array
+         * 2. criar método que recupera a informação, plotando na listbox
+         * 
+         */
+
     }
 }

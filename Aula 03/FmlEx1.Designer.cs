@@ -44,7 +44,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(102, 65);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(382, 28);
-            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Insira 10 valores inteiro maiores que 0.";
             // 
             // tbxInsert
@@ -52,7 +52,7 @@
             this.tbxInsert.Location = new System.Drawing.Point(98, 146);
             this.tbxInsert.Name = "tbxInsert";
             this.tbxInsert.Size = new System.Drawing.Size(337, 27);
-            this.tbxInsert.TabIndex = 1;
+            this.tbxInsert.TabIndex = 0;
             this.tbxInsert.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnSend
@@ -60,7 +60,7 @@
             this.btnSend.Location = new System.Drawing.Point(441, 141);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(94, 37);
-            this.btnSend.TabIndex = 2;
+            this.btnSend.TabIndex = 1;
             this.btnSend.Text = "Enviar";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -72,9 +72,9 @@
             this.lblContador.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblContador.Location = new System.Drawing.Point(56, 149);
             this.lblContador.Name = "lblContador";
-            this.lblContador.Size = new System.Drawing.Size(27, 20);
-            this.lblContador.TabIndex = 3;
-            this.lblContador.Text = "10";
+            this.lblContador.Size = new System.Drawing.Size(18, 20);
+            this.lblContador.TabIndex = 5;
+            this.lblContador.Text = "5";
             // 
             // lbxNumber
             // 
@@ -83,7 +83,7 @@
             this.lbxNumber.Location = new System.Drawing.Point(38, 215);
             this.lbxNumber.Name = "lbxNumber";
             this.lbxNumber.Size = new System.Drawing.Size(150, 164);
-            this.lbxNumber.TabIndex = 4;
+            this.lbxNumber.TabIndex = 2;
             // 
             // lbxNumPar
             // 
@@ -92,7 +92,7 @@
             this.lbxNumPar.Location = new System.Drawing.Point(218, 215);
             this.lbxNumPar.Name = "lbxNumPar";
             this.lbxNumPar.Size = new System.Drawing.Size(150, 164);
-            this.lbxNumPar.TabIndex = 5;
+            this.lbxNumPar.TabIndex = 3;
             // 
             // lbxNumImp
             // 
@@ -101,7 +101,7 @@
             this.lbxNumImp.Location = new System.Drawing.Point(398, 215);
             this.lbxNumImp.Name = "lbxNumImp";
             this.lbxNumImp.Size = new System.Drawing.Size(150, 164);
-            this.lbxNumImp.TabIndex = 6;
+            this.lbxNumImp.TabIndex = 4;
             // 
             // fmlEx1
             // 
