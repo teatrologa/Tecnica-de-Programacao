@@ -12,7 +12,7 @@ namespace Aula_03
 {
     public partial class fmlEx1 : Form
     {
-        int[] inteiros = new int[5];
+        int[] inteiros = new int[10];
         int contadorGeral = 0;
         
         
@@ -34,13 +34,13 @@ namespace Aula_03
         {
             
             int contadorInterno = contadorGeral;
-            if (contadorGeral <= 4)
+            if (contadorGeral <= 9)
             {
                 inteiros[contadorInterno] = Convert.ToInt32(tbxInsert.Text);
                 contador();
                 tbxInsert.Text = "";
                 contadorGeral++;
-                if (contadorInterno == 4)
+                if (contadorInterno == 9)
                 {
                     escreverNumero();
                     separarPar();
@@ -97,8 +97,8 @@ namespace Aula_03
 
         /*
          * Ideia:
-         * 1. criar metodos com funções específicas de receber e gravar o numero no array
-         * 2. criar método que recupera a informação, plotando na listbox
+         * 1. Fazer validação de entrada
+         * 2. arrumar o layout explicando o que cada campo é etc
          * 
          */
 
