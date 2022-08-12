@@ -22,3 +22,28 @@ inicialize todos os elementos de 1 até 'linha x coluna'.
 Exercício 4
 Usando matriz, crie o jogo da velha. Inicialmente, as posições são variáveis vazias.
 O usuário fornece a linha e a coluna e confirma, então é marcado no tabuleiro X ou O (se for o jogador 1 ou jogador 2).
+
+
+
+>> VALIDAÇÔES <<
+Isso é o que falta em TODOS os exercicios, então, comece a cria-las e entende-las!! :3
+
+
+
+
+ideias para 2:
+Usar dicionario
+A logica que usei a 2 foi essa:
+Primeiro faz um Sort reverso e armazena em uma array
+Depois procura nessa array em qual posição (index) aquele numero está
+
+
+Cara, dicionário é uma boa ideia
+Tipo, vc ordena
+O valor mais alto é a key 1
+o segundo maior é a key 2
+E assim vai
+
+sim, usei sort e reverse
+
+
