@@ -57,11 +57,6 @@ namespace Aula_03
             return cont; 
         }
 
-        private void receberNum(int cont)
-        {
-            inteiros[cont] = Convert.ToInt32(tbxInsert.Text);
-        }
-
         private void escreverNumero()
         {
             

@@ -19,16 +19,26 @@ namespace Aula_03
 
         private void btnEx2_Click(object sender, EventArgs e)
         {
-
+            this.Hide(); 
+            fmlEx2 newEx = new fmlEx2();
+            newEx.ShowDialog();
+            this.Show();
         }
 
         private void btnEx3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            fmlEx3 newEx = new fmlEx3();
+            newEx.ShowDialog(); 
+            this.Show(); 
         }
 
         private void btnEx4_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fmlEx4 newEx = new fmlEx4();
+            newEx.ShowDialog();
+            this.Show();
 
         }
 
