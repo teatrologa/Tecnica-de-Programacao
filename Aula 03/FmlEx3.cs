@@ -26,14 +26,24 @@ namespace Aula_03
         {
             int linha = Convert.ToInt32(tbxLinha.Text);
             int coluna = Convert.ToInt32(tbxColuna.Text);
+            gbxAreaPlot.Text = $"Essa é uma matriz {linha}x{coluna}.";
             string[ , ] matriz = new string[ linha, coluna ];
             for (int i = 0; i < matriz.GetLength(0); i++)
             {
+                string linhaTex = ""; //você precisa concatenar os valores das colunas em uma string de linha,
+                                      //por isso você deve criar essa variavel antes de iniciar o for de coluna.
+                                      //Lá dentro você faz a concatenação de valores usando o +=.
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
                     matriz[i, j] = "*";
+                    linhaTex += " " + matriz[i, j] + " "; //Aqui você está concatenando os valores das colunas em uma linha "i" específica.
                 }
+
+                lboxMatriz.Items.Add(linhaTex); //Agora tendo a linha criada, você aciciona ela, e faz isso linha por linha no loop.
             }
+
+            tbxColuna.Text = "";
+            tbxLinha.Text = "";
         }
     }
 }
