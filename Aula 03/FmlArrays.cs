@@ -9,9 +9,12 @@ namespace Aula_03
 
         private void btnEx1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); //isso esconde o menu principal para poder abrir o novo form
             fmlEx1 newEx = new fmlEx1();
-            newEx.Show();
+            newEx.ShowDialog(); //existe 2 formas de chamar esse novo form Show e ShowDialog
+                                //porém apenas com o ShowDialog quando eu fecho o form ele chama o menu principal automaticamente
+                                //caso contrário, ele abre os dois forms
+            this.Show(); //isso faz o menu principal (este aqui) abrir novamente
         }
 
         private void btnEx2_Click(object sender, EventArgs e)
