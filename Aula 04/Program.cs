@@ -49,9 +49,9 @@ List<string> rockyPlanets = new List<string>();
 planetasRochosos = sistemaSolar.GetRange(0, 4);
 rockyPlanets = solarSistem.GetRange(0, 4);
 
-sistemaSolar.Remove(sistemaSolar.Count - 1);
+//Dois tipos de remover, por nome ou numero
+sistemaSolar.RemoveAt(sistemaSolar.Count - 1);
 solarSistem.Remove("Plutão");
-//Remove(sistemaSolar.Count - 1) == funciona para o array mas não para a lista
 
 Console.WriteLine("");
 foreach (string p in sistemaSolar)
@@ -68,4 +68,19 @@ foreach (string pr in planetasRochosos)
 /*
  * Forma de conseguir ver o planetasRochosos pois o foreach estoura um erro
  * ArrayList planetasRochosos = new ArrayList(planetas.GetRange(0, 4));
+ */
+
+
+/*
+ * Nota: quando vc coloca tudo dentro do arraylist, o programa
+ * pega o que vc deu Add, converte para um tipo "object" e guarda.
+ * Quando vc precisa recuperar a informação, o programa precisa
+ * pegar o 'object' e reconverter para o tipo dele normal
+ * 
+ * por isso usar lista fortemente tipada pe vantajoso pois hpa ganho de performance
+ * 
+ * obs: os nomes para o que o arraylist faz é boxing (int>object)
+ * e unboxing (object >int)
+ * 
+ * 
  */
