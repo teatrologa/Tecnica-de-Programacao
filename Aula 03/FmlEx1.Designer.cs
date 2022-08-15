@@ -72,9 +72,9 @@
             this.lblContador.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblContador.Location = new System.Drawing.Point(56, 149);
             this.lblContador.Name = "lblContador";
-            this.lblContador.Size = new System.Drawing.Size(18, 20);
+            this.lblContador.Size = new System.Drawing.Size(27, 20);
             this.lblContador.TabIndex = 5;
-            this.lblContador.Text = "5";
+            this.lblContador.Text = "10";
             // 
             // lbxNumber
             // 

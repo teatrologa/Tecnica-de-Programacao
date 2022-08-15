@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula 04", "Aula 04", "{8B42
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 04", "Aula 04\Aula 04.csproj", "{87A750E3-C3FD-49F3-BD58-03A4E7EC4B0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios - Aula 04", "Exercicios - Aula 04\Exercicios - Aula 04.csproj", "{0EC10859-3724-4837-B770-2C33573BBD0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula 04 - Exercícios", "Exercicios - Aula 04\Aula 04 - Exercícios.csproj", "{0EC10859-3724-4837-B770-2C33573BBD0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
