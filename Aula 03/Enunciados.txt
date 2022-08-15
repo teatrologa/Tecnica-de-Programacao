@@ -1,4 +1,4 @@
-﻿Exercício 1
+﻿(OK) Exercício 1
 (Para esse exercício, utilize um projeto Console ou Windows Forms)
 Escreva uma aplicação no qual o usuário deverá informar 10 números inteiro e maiores que zero em um array.
 Em um segundo array, armazene apenas os números pares e em um terceiro apenas os ímpares.
@@ -14,7 +14,7 @@ Por exemplo: ranks([9,3,6,10]) = [2,4,3,1]
 ranks([3,3,3,3,3,5,1]) = [2,2,2,2,2,1,7]
 
 
-Exercício 3
+(OK) Exercício 3
 Peça ao usuário uma quantidade de linhas e e outra de colunas, depois declare tal matriz,
 inicialize todos os elementos de 1 até 'linha x coluna'.
 
