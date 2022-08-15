@@ -1,4 +1,4 @@
-﻿> Exercicio de ArrayList
+﻿OK > Exercicio de ArrayList
 
 (Utilize um projeto do tipo Console ou Windows Form)
 Crie uma função que receba uma ArrayList e um número.
@@ -10,7 +10,7 @@ Coloque apenas o código da função na resposta.
 
 > Exercicios de List
 
->Ex1
+OK >Ex1
 Dado uma lista de inteiros, retorne a contagem de números positivos e a soma de números negativos.
 Zero não é positivo nem negativo. Se a entrada for uma lista vazia ou for nula, exiba um mensagem com erro.
 	Exemplo:
