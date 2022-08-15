@@ -18,7 +18,7 @@ Zero não é positivo nem negativo. Se a entrada for uma lista vazia ou for nula
 	- resultado = 10, -65
 
 
->Ex2
+OK >Ex2
 Você deve implementar uma função que retorne a diferença entre o maior
 e o menor valor em uma determinada lista recebida como parâmetro.
 	- a lista contém números inteiros, o que significa que pode conter alguns números negativos
