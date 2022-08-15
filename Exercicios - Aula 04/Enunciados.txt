@@ -28,7 +28,7 @@ e o menor valor em uma determinada lista recebida como parâmetro.
 	[1, 2, 3, -4]  //  RETORNE 7 PORQUE 3 - (-4) == 7
 
 
->Ex3
+OK >Ex3
 Basta encontrar o valor mais próximo de zero na lista. Observe que há negativos na lista.
 A lista não está sempre vazia e contém apenas números inteiros.
 Retorne "Nenhum" se não for possível definir apenas um desses valores.
