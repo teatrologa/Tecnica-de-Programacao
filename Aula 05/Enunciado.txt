@@ -1,1 +1,30 @@
 ﻿Faça um script que leia uma frase do usuário e use um dicionário que apresente as vogais e as frequencias de sua aparição na frase.
+
+
+Exercício 2
+Usando dicionários, faça um robô que traduza uma linha de comando c# para seu respectivo
+comando em português usando a tabela abaixo. Alguns exemplos estão listados ao final.
+C#        PORTUGUÊS
+--      -----------------
+if        se
+while    enquanto
+>        maior que
+<        menor que
+>=        maior igual que
+<=        menor igual que
+==        igual a
+!=        diferente de
+
+Exemplo 1
+
+input: if x > y
+
+output: se x maior que y
+
+Exemplo 2
+
+input: while x != y
+
+output: enquanto x diferente de y
+
+Seu programa deve tratar apenas casos básicos de programação.
