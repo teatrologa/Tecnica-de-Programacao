@@ -1,20 +1,20 @@
-﻿Exercício 01
+﻿OK - Exercício 01
 Utilizando a fonte de dados disponibilizada, crie um método que
 retorne uma lista de produtos cuja última letra do nome é a vogal "O".
 
-Exercício 02
+OK - Exercício 02
 Utilizando a fonte de dados disponibilizada, crie um método que
 retorne a quantidade de produtos cujo valor é menor que 50 reais.
 
-Exercício 03
+OK - Exercício 03
 Utilizando a fonte de dados disponibilizada, crie um método
 que retorne a média de preço dos produtos inativos.
 
-Exercício 04
+OK - Exercício 04
 Utilizando a fonte de dados disponibilizada, crie um método que
 retorne o primeiro produto com valor inferior à 10 reais. Retorne nulo se não existir.
 
-Exercício 05
+OK - Exercício 05
 Utilizando a fonte de dados disponibilizada, crie um método que
 ordene os produtos por Nome, em ordem decrescente, e retorne o último elemento da lista.
 
