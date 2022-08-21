@@ -24,7 +24,7 @@ namespace Aula_07
             stopwatch.Start();
 
             ParallelOptions parOpt = new();
-            parOpt.MaxDegreeOfParallelism = 7;
+            parOpt.MaxDegreeOfParallelism = 7; //Utilizado no exercício 01
 
             //Metodo 1.1
             Parallel.For(0, 100, parOpt, i =>
@@ -58,9 +58,20 @@ namespace Aula_07
 
 
             stopwatch.Stop();
-            
 
-            Console.WriteLine($"Tempo total: {stopwatch.ElapsedMilliseconds} milissegundos");
+
+            Stopwatch stopwatchs = Stopwatch.StartNew();
+
+            Console.WriteLine("Insira a quantidade de threads que você gostaria de empregar nesta execussão: [ex: 5]");
+            int threads = Convert.ToInt32(Console.ReadLine());
+            ExecutarMetodos(threads);
+
+            stopwatchs.Stop();
+
+
+
+
+            Console.WriteLine($"Tempo total: {stopwatchs.ElapsedMilliseconds} milissegundos");
         }
 
         public static void GetAPI(string api)
@@ -73,7 +84,8 @@ namespace Aula_07
         {
             Thread.Sleep(3000);
             Console.WriteLine("Base de dados acertada.");
-;       }
+            ;
+        }
 
         public static void EnviarEmail()
         {
@@ -85,6 +97,18 @@ namespace Aula_07
         {
             Thread.Sleep(4000);
             Console.WriteLine("Limpeza de cache concluida.");
+        }
+
+        public static void ExecutarMetodos(int qnt)
+        {
+            ParallelOptions opt = new ParallelOptions();
+            opt.MaxDegreeOfParallelism = qnt;
+
+            Parallel.Invoke(opt, 
+                () => AcertarBaseDeDados(),
+                () => EnviarEmail(),
+                () => LimparArquivosTemporarios()
+            );
         }
     }
 }
