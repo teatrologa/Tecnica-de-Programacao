@@ -1,7 +1,13 @@
 ﻿Exercício 01
 Criar um aplicativo que simule uma chamada à uma API. Utilize Sleep para definir o tempo de 2 segundos para uma chamada.
 Utilizando paralelismo (for ou foreach), execute essa chamada 100 vezes utilizando no máximo 7 threads.
-Exiba uma mensagem de finalização ao terminar cada chamada. Exiba o tempo gasto para toda a operação em segundos.
+Exiba uma mensagem de finalização ao terminar *cada* chamada. Exiba o tempo gasto para *toda* a operação em segundos.
+80x na lista: Tempo total: 160724 milissegundos
+100x com api variavel: Tempo total: 200941 milissegundos
+80x api/variavel: Tempo total: 188273 milissegundos
+Tempo total: 16944 milissegundos (com paralel 100x1 = 100)
+Tempo total: 16217 milissegundos (com paralel + foreach + list 25x4 = 100)
+Tempo total: 20230 milissegundos (com paralel + list[1] 100x1 = 100)
 
 
 
@@ -13,6 +19,6 @@ Criar um aplicativo que possua 3 métodos:
 	LimparArquivosTemporarios
 
 Cada método terá seu tempo de execução definido por Sleep (no máximo 4 segundos).
-Faça com que os 3 métodos sejam executados em paralelo. Utilize um quarto método que fará a
+Faça com que os 3 métodos sejam executados em paralelo. Utilize um *quarto* método que fará a
 execução dos demais e faça com que ele espere um parâmetro onde será informada a quantidade
 de threads a serem utilizadas na execução. Exiba do tempo gasto em milissegundos.
